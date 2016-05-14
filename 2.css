@@ -1,0 +1,107 @@
+body { background-image: url(images/1.jpg)}
+
+#tr { color: #FFFFFF;
+	font-size: 20px;
+	text-shadow: 1px 1px 2px black, 0 0 1em black;
+	font-family: 'Roboto Slab', serif;}
+	
+.modal-body{color: #CD8D2A}
+ #111 {
+text-align: center}
+
+.modal-title2{
+color: #CDA64D;
+font-family: 'Roboto Slab', serif;}
+
+#but {
+height:70px;
+width:230px;
+font-size: 20px;
+	text-shadow: 1px 1px 2px black, 0 0 1em black;
+	font-family: 'Roboto Slab', serif;
+	
+	display: inline-block;
+margin: 10px;
+width: 250px;
+height: 100px;
+background: url(http://subtlepatterns.com/patterns/extra_clean_paper...);
+cursor: pointer;
+border-radius: 50%;
+
+box-shadow: 0 3px 20px rgba(0,0,0,.25),
+inset 0 2px 0 rgba(255,255,255,.6),
+0 2px 0 rgba(0,0,0,.1),
+inset 0 0 20px rgba(0,0,0,.1);
+}
+
+#book{
+height:275px;
+width:384px;
+}
+
+.kont{
+font-size: 17px;
+font-family: 'Roboto Slab', serif;
+}
+
+#way{
+
+height:350px;
+width:350px;
+}
+
+#act{
+font-family: Marck Script, cursive; 
+font-size: 30px; color: #980028; 
+font-weight: bold;
+}
+
+#rol{
+color: #0A3C52;
+font-size: 20px;
+}
+
+#comments {
+background: white;
+width:500px;
+}
+
+#komments {
+font-family: Marck Script, cursive;
+font-size: 20px; 
+color: #FE2E2E; 
+font-weight: bold;
+opacity: 1.0;} 
+
+#jq {
+	font-family: Marck Script, cursive; font-size: 25px; color: #3A3C52; font-weight: bold;"
+	height: 25px;
+	width: 500px;
+	text-align: center;
+		
+}
+#delete {
+	background-color:#3bb3e0;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color:#fff;
+	
+	padding:5px 10px;
+	border-left:solid 1px #2ab7ec;
+	margin-left:35px;
+	background-image: linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+}
+
+#delete:active {
+	top:3px;
+	background-image: linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+}
+
+#txt {
+	width: 450px;
+	height: 30px;}

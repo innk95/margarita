@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+   <script type="text/javascript" src="jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="scrip.js"></script>    
+
+
+	<link rel="stylesheet" type="text/css" href="2.css">
+	<link href='https://fonts.googleapis.com/css?family=Kelly+Slab' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мастер и Маргарита</title>      
+    <!-- 1. Подключаем скомпилированный и минимизированный файл CSS Bootstrap 3 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    
+     <!-- скрипт для добавления комментарий -->
+    <script type="text/javascript">
+    <!--
+    window.onload = function(){
+         
+        document.getElementById('add').onclick = startKomm;
+    }
+ 
+       function startKomm(){
+         
+        var text = document.getElementById('txt').value;
+        var komm = document.createElement('p');
+        var newText = document.createTextNode(text);
+        onclick="new_layer('images/svitok.png')" 
+        komm.appendChild(newText);
+         
+        document.getElementById('komments').appendChild(komm);
+        return true;
+       }
+       
+       
+    -->   
+    <script type="text/javascript">
+var im=["images/svitok.png"],
+img=document.getElementById("img1"),
+src=document.getElementById("src");
+function res()
+{
+    var rand=Math.ceil(Math.random()*2)-1;
+    img.src=im[rand];
+    src.value=im[rand];
+}
+</script>
+    
+    
+    
+  </head>
+  <body>
+      <!-- 2. Подключаем библиотеку jQuery, необходимую для работы скриптов Bootstrap 3 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 3. Подключаем скомпилированный и минимизированный файл JavaScript платформы Bootstrap 3 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Дополнительный сценарий на языке JavaScript, предназначенный для инициализации компонента Bootstrap "Popovers" -->
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+    </script>
+    
+    
+    
+    
+    
+    <div class="container-fluid">
+      <div class="row-fluid">
+        
+        <div class="col-lg-3" >
+			<center><img src="images/2.png">
+			<br><br>
+			<button class="btn btn-large btn-warning" data-toggle="modal" data-target="#myModal" id="but">
+			О Постановке
+			</button>
+
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      
+    <div class="modal-body">
+		  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<p id="act" style="font-size:40px">Содержание романа</p>
+<p style="font-size: 20px">В произведении — две сюжетные линии, каждая из которых развивается самостоятельно. Действие первой разворачивается в Москве в течение нескольких майских дней (дней весеннего полнолуния) в 30-х гг. XX века, действие же второй происходит тоже в мае, но в городе Ершалаиме (Иерусалиме) почти две тысячи лет тому назад — в самом начале новой эры. Роман построен таким образом, что главы основной сюжетной линии перемежаются главами, составляющими вторую сюжетную линию, причём эти вставные главы являются то главами из романа мастера, то рассказом очевидца событий Воланда.</p>
+<br>
+<p id="act" style="font-size:40px">О постановке</p>
+<p style="font-size: 20px">Блистательный текст романа волею мастерства актеров и режиссера прожигает сознание зрителя, подводя к неведомым доселе открытиям. Этот спектакль - триумф сцены, насыщенный искрометной фантазией, глубиной постижения булгаковского текста, всепроникающей музыкой и яркой театральностью.Сценическое прочтение явлений современной русской жизни призвано ответить на вопрос о том, каково состояние общества, в котором живем, увиденное через призму гениального русского романа.</p>
+
+	</div>
+    </div>
+    </div>
+	</div>
+       <br>
+	<button class="btn btn-large btn-warning" data-toggle="modal" data-target="#myModal2" id="but">
+    Фотографии
+    </button>
+
+
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h2 class="modal-title2" id="myModalLabel"><center>Фотографии</center></h2>
+				</div>
+			<div class="modal-body">
+        
+        
+        
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+<div class="carousel-inner">
+
+    <div class="item active">
+      <center><img src="images/orig.jpg"><center>
+	</div>
+    
+    <div class="item">
+      <center><img src="images/9095_original.jpg" ></center>
+    </div>
+    
+    <div class="item">
+      <center><img src="images/11555_original.jpg" ></center>
+    </div>
+
+</div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+		</div>
+      
+      
+      
+      </div>
+    </div>
+  </div>
+</div>
+        
+        
+        
+        
+        <button class="btn btn-large btn-warning" data-toggle="modal" data-target="#myModal3" id="but">
+        Актерский состав
+		</button>
+
+
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+		  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<h2>Действующие лица и исполнители</h2>
+<br><br>
+<table>
+<tr>
+<th id="act">Мастер</th>
+<th id="rol">Анатолий Белый</th>
+</tr>
+<tr>
+<th id="act">Маргарита &nbsp;</th>
+<th id="rol">Наташа Швец</th>
+</tr>
+<tr>
+<th id="act">Воланд</th>
+<th id="rol">Дмитрий Назаров</th>
+</tr>
+<tr>
+<th id="act">Коровьев</th>
+<th id="rol">Михаил Трухин</th>
+</tr><tr>
+<th id="act">Бегемот</th>
+<th id="rol">Фёдор Лавров, Артём Волобуев</th>
+</tr>
+<tr>
+<th id="act">Азазелло</th>
+<th id="rol">Эдуард Чекмазов</th>
+</tr>
+</table>
+</div>
+      </div>
+    </div>
+</div>
+<br><br><br>
+      <img src="images/book.png" id="book">  
+        
+        
+        </center>
+        
+        
+        
+        
+        </div>   
+        
+        <div class="col-lg-6">
+		<center><img src="images/4.png"></center>			
+<div id="tr">
+<p>История романа Михаила Булгакова «Мастер и Маргарита», перенесенная режиссером Валерием Беляковичем на сцену МХАТ имени Чехова – это спектакль не только об извечной борьбе добра со злом и великой любви, но и о предательстве, о трусости, о трагедии убийства Мастеров целого поколения…</p>
+<center><p>МХАТ им. Чехова</p>
+<p>28 апреля 2016</p>
+<p>Режиссер : Нар. артист России В.Р. Белякович</p>
+<p>Художник-постановщик — Симон Вирсаладзе</p>
+<p>Художник : Нар. артист России В.Р. Белякович</p>
+<p>Художник по костюмам : Е.Л. Еловикова</p>
+<p>Продолжительность: 3 час 40 мин</p>
+</center>		    
+</div>
+<h1>......................................................................</h1>
+        <div id="tr" ><div id="jq"></div></div>
+        <p style="font-family: Marck Script, cursive; font-size: 50px; color: #0A3C52; font-weight: bold;">Отзывы:</p>
+        <input type="text" placeholder="Оставьте свой отзыв..." id="txt">
+        
+        <div class="form-actions">
+			
+  <input type="button" value="Отправить" class="btn btn-primary" id="addd" onClick="otziv()"> 
+  
+        </div>
+        <br>
+          <div class="span2" id="comments">     
+	       <div id="komments" > </div>
+          </div>	    
+
+        </div><!--col-lg-6-->
+        
+        <div class="col-lg-3">
+			<img src="images/5.jpg" style="height: 400px;" class="img-circle">
+			<br><br><br><br>
+			<div class="kont">
+       <p>125009, Москва, Камергерский пер., д. 3</p>
+       <p>Тел.: + 7 (495) 629-87-60,</p>
+       <p>факс.: + 7 (495) 629-20-92</p>
+       <p>Сайт: <a href="http://www.mxat.ru">http://www.mxat.ru/</a></p>
+       </div>
+       <img src="images/way.gif" class="img-polaroid" id="way">
+       
+        </div>           
+      </div><!--/row-->        
+
+    </div> <!-- /container -->
+    
+    
+
+
+    
+    
+  <p align="center">© Petrov V.</p>  
+    
+</body>
+</html>
